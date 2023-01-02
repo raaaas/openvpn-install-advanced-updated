@@ -535,7 +535,7 @@ iptables -t nat -A PREROUTING -i tun+ -p tcp --dport 80 -j REDIRECT --to-port 80
 		rm -rf /etc/openvpn/easy-rsa/
 	fi
 	# Get easy-rsa
-	wget --no-check-certificate -O ~/EasyRSA-3.1.1.tgz https://github.com/OpenVPN/easy-rsa/releases/download/3.1.1/EasyRSA-3.1.1.tgz
+	wget --no-check-certificate -O ~/EasyRSA-3.1.1.tgz https://github.com/OpenVPN/easy-rsa/releases/download/v3.1.1/EasyRSA-3.1.1.tgz
 	tar xzf ~/EasyRSA-3.1.1.tgz -C ~/
 	mv ~/EasyRSA-3.1.1/ /etc/openvpn/
 	mv /etc/openvpn/EasyRSA-3.1.1/ /etc/openvpn/easy-rsa/
